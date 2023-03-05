@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qKxsKeh1UA7H3IJb15Pdi7Du0kqc4fRavIWWJGooG+sAm/z1SJC19szcb7dsnIUhSAvVf//7dVPAKsS/wvgjcg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\insiy\\source\\repos\\BinarySearchTree\\BinarySearchTree.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\insiy\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
