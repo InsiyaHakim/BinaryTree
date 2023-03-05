@@ -1,4 +1,6 @@
-﻿namespace BinarySearchTree
+﻿using System;
+
+namespace BinarySearchTree
 {
 	public class BinaryTree
 	{
@@ -18,6 +20,16 @@
 				}
 			}
 			return root;
+		}
+
+		public TreeNode Find(int value)
+		{
+			if (root != null && value != 0)
+			{
+				return root.Find(value);
+			}
+
+			throw new Exception("Invalid value, Please try again");
 		}
 	}
 }

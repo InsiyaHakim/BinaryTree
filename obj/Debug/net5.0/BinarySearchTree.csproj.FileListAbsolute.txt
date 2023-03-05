@@ -3,9 +3,7 @@ C:\Users\insiy\source\repos\BinarySearchTree\bin\Debug\net5.0\BinarySearchTree.d
 C:\Users\insiy\source\repos\BinarySearchTree\bin\Debug\net5.0\BinarySearchTree.runtimeconfig.json
 C:\Users\insiy\source\repos\BinarySearchTree\bin\Debug\net5.0\BinarySearchTree.runtimeconfig.dev.json
 C:\Users\insiy\source\repos\BinarySearchTree\bin\Debug\net5.0\BinarySearchTree.dll
-C:\Users\insiy\source\repos\BinarySearchTree\bin\Debug\net5.0\ref\BinarySearchTree.dll
 C:\Users\insiy\source\repos\BinarySearchTree\bin\Debug\net5.0\BinarySearchTree.pdb
-C:\Users\insiy\source\repos\BinarySearchTree\obj\Debug\net5.0\BinarySearchTree.csprojAssemblyReference.cache
 C:\Users\insiy\source\repos\BinarySearchTree\obj\Debug\net5.0\BinarySearchTree.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\insiy\source\repos\BinarySearchTree\obj\Debug\net5.0\BinarySearchTree.AssemblyInfoInputs.cache
 C:\Users\insiy\source\repos\BinarySearchTree\obj\Debug\net5.0\BinarySearchTree.AssemblyInfo.cs
@@ -14,3 +12,5 @@ C:\Users\insiy\source\repos\BinarySearchTree\obj\Debug\net5.0\BinarySearchTree.d
 C:\Users\insiy\source\repos\BinarySearchTree\obj\Debug\net5.0\ref\BinarySearchTree.dll
 C:\Users\insiy\source\repos\BinarySearchTree\obj\Debug\net5.0\BinarySearchTree.pdb
 C:\Users\insiy\source\repos\BinarySearchTree\obj\Debug\net5.0\BinarySearchTree.genruntimeconfig.cache
+C:\Users\insiy\source\repos\BinarySearchTree\obj\Debug\net5.0\BinarySearchTree.csproj.AssemblyReference.cache
+C:\Users\insiy\source\repos\BinarySearchTree\obj\Debug\net5.0\refint\BinarySearchTree.dll

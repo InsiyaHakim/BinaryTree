@@ -43,5 +43,23 @@ namespace BinarySearchTree
 			}
 			return this;
 		}
+
+		public TreeNode Find(int value)
+		{
+			
+			TreeNode currentNode = this;
+
+			while (currentNode != null)
+			{
+				if (currentNode.data == value) return currentNode;
+
+				currentNode = value < currentNode.data
+					? currentNode.leftNode
+					: currentNode.rightNode;
+			}
+			
+			throw new Exception("Cannot find this value");
+		}
 	}
 }
+

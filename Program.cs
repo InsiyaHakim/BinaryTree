@@ -18,7 +18,12 @@ namespace BinarySearchTree
 			binaryTree.Insert(86);
 			binaryTree.Insert(99);
 
-			Console.WriteLine(binaryTree.root);
+			
+			//var findValue = binaryTree.Find(11);
+			//var findValue = binaryTree.Find(0);
+			var findValue = binaryTree.Find(90);
+			Console.WriteLine(findValue);
+			;
 		}
 	}
 }
