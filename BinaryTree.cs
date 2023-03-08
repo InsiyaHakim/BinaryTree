@@ -26,7 +26,8 @@ namespace BinarySearchTree
 		{
 			if (root != null && value != 0)
 			{
-				return root.Find(value);
+				//return root.Find(value);
+				return root.FindNodeRecursively(value);
 			}
 
 			throw new Exception("Invalid value, Please try again");

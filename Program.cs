@@ -21,7 +21,7 @@ namespace BinarySearchTree
 			
 			//var findValue = binaryTree.Find(11);
 			//var findValue = binaryTree.Find(0);
-			var findValue = binaryTree.Find(90);
+			var findValue = binaryTree.Find(99);
 			Console.WriteLine(findValue);
 			;
 		}
