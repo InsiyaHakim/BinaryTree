@@ -63,7 +63,8 @@ namespace BinarySearchTree
 
 		public TreeNode FindNodeRecursively(int value)
 		{	
-			var currentNode = this.data;
+			//This is to check current value in our stack
+			//var currentNode = this.data;
 			if (data == value) return this;
 
 			if (value < data)
