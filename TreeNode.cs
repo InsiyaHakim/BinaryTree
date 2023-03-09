@@ -78,6 +78,43 @@ namespace BinarySearchTree
 			
 			return null ;
 		}
+
+		public TreeNode GetSmallestNode()
+		{
+			var currentNode = this;
+
+			while (currentNode.leftNode != null) currentNode = currentNode.leftNode;
+
+			return currentNode;
+		}
+		public TreeNode GetSmallestNodeUsingRecursion()
+		{
+			if (leftNode == null)
+			{
+				return this;
+			}
+			
+			return leftNode.GetSmallestNodeUsingRecursion();
+		}
+
+		public TreeNode GetLargestNode()
+		{
+			var currentNode = this;
+
+			while (currentNode.rightNode != null) currentNode = currentNode.rightNode;
+
+			return currentNode;
+		}
+
+		public TreeNode GetLargestNodeUsingRecursion()
+		{
+			if (rightNode == null)
+			{
+				return this;
+			}
+
+			return rightNode.GetLargestNodeUsingRecursion();
+		}
 	}
 }
 

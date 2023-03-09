@@ -32,5 +32,22 @@ namespace BinarySearchTree
 
 			throw new Exception("Invalid value, Please try again");
 		}
+
+		public TreeNode GetSmallestNode()
+		{
+			return root?.GetSmallestNode();
+		}
+		public TreeNode GetSmallestNodeUsingRecursion()
+		{
+			return root?.GetSmallestNodeUsingRecursion();
+		}
+		public TreeNode GetLargestNode()
+		{
+			return root?.GetLargestNode();
+		}
+		public TreeNode GetLargestNodeUsingRecursion()
+		{
+			return root?.GetLargestNodeUsingRecursion();
+		}
 	}
 }

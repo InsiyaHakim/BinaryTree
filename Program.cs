@@ -18,12 +18,23 @@ namespace BinarySearchTree
 			binaryTree.Insert(86);
 			binaryTree.Insert(99);
 
-			
+
 			//var findValue = binaryTree.Find(11);
 			//var findValue = binaryTree.Find(0);
-			var findValue = binaryTree.Find(99);
-			Console.WriteLine(findValue);
-			;
+			//var findValue = binaryTree.Find(99);
+
+			/*var smallestValue = binaryTree.GetSmallestNode();
+			Console.WriteLine(smallestValue);*/
+
+			//var smallestValue = binaryTree.GetSmallestNodeUsingRecursion();
+			//Console.WriteLine(smallestValue);
+
+			/*var largestValue = binaryTree.GetLargestNode();
+			Console.WriteLine(largestValue);*/
+
+			var largestValue = binaryTree.GetLargestNodeUsingRecursion();
+			Console.WriteLine(largestValue);
+
 		}
 	}
 }
