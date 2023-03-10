@@ -49,5 +49,13 @@ namespace BinarySearchTree
 		{
 			return root?.GetLargestNodeUsingRecursion();
 		}
+		public TreeNode GetSmallestNodeWithoutUsingStackSpace()
+		{
+			return root?.GetSmallestNodeWithoutUsingStackSpace();
+		}
+		public TreeNode GetLargestNodeWithoutUsingStackSpace()
+		{
+			return root?.GetLargestNodeWithoutUsingStackSpace();
+		}
 	}
 }

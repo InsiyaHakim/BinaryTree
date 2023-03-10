@@ -32,8 +32,14 @@ namespace BinarySearchTree
 			/*var largestValue = binaryTree.GetLargestNode();
 			Console.WriteLine(largestValue);*/
 
-			var largestValue = binaryTree.GetLargestNodeUsingRecursion();
-			Console.WriteLine(largestValue);
+			/*var largestValue = binaryTree.GetLargestNodeUsingRecursion();
+			Console.WriteLine(largestValue);*/
+
+			/*var getSmallestNodeWithoutUsingStackSpace = binaryTree.GetSmallestNodeWithoutUsingStackSpace();
+			Console.WriteLine(getSmallestNodeWithoutUsingStackSpace.data);*/
+			
+			var getLargestNodeWithoutUsingStackSpace = binaryTree.GetLargestNodeWithoutUsingStackSpace();
+			Console.WriteLine(getLargestNodeWithoutUsingStackSpace.data);
 
 		}
 	}

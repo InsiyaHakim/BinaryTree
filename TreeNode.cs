@@ -81,11 +81,21 @@ namespace BinarySearchTree
 
 		public TreeNode GetSmallestNode()
 		{
-			var currentNode = this;
+			var currentNode = this;// although this is 0(1) operation but here we are using extra space assigning this value
 
 			while (currentNode.leftNode != null) currentNode = currentNode.leftNode;
 
 			return currentNode;
+		}
+		public TreeNode GetSmallestNodeWithoutUsingStackSpace()
+		{
+			//here no extra space is utilized
+
+			if (leftNode == null) return this;
+
+			while (leftNode.leftNode != null) leftNode = leftNode.leftNode;
+
+			return leftNode;
 		}
 		public TreeNode GetSmallestNodeUsingRecursion()
 		{
@@ -104,6 +114,16 @@ namespace BinarySearchTree
 			while (currentNode.rightNode != null) currentNode = currentNode.rightNode;
 
 			return currentNode;
+		}
+		public TreeNode GetLargestNodeWithoutUsingStackSpace()
+		{
+			//here no extra space is utilized
+
+			if (rightNode == null) return this;
+
+			while (rightNode.rightNode != null) rightNode = rightNode.rightNode;
+
+			return rightNode;
 		}
 
 		public TreeNode GetLargestNodeUsingRecursion()
