@@ -81,7 +81,7 @@ namespace BinarySearchTree
 
 		public TreeNode GetSmallestNode()
 		{
-			var currentNode = this;// although this is 0(1) operation but here we are using extra space assigning this value
+			var currentNode = this;// although this line is 0(1) operation but here we are using extra space assigning this value
 
 			while (currentNode.leftNode != null) currentNode = currentNode.leftNode;
 
