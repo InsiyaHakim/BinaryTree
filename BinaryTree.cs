@@ -4,30 +4,32 @@ namespace BinarySearchTree
 {
 	public class BinaryTree
 	{
-		public TreeNode root;
+		public TreeNode Root;
+		private static int _numberOfNodesInTree;
 
 		public TreeNode Insert(int data)
 		{
 			if (data != 0)
 			{
-				if (root != null)
+				_numberOfNodesInTree++;
+				if (Root != null)
 				{
-					root.Insert(data);
+					Root.Insert(data);
 				}
 				else
 				{
-					root = new TreeNode(data);
+					Root = new TreeNode(data);
 				}
 			}
-			return root;
+			return Root;
 		}
 
 		public TreeNode Find(int value)
 		{
-			if (root != null && value != 0)
+			if (Root != null && value != 0)
 			{
 				//return root.Find(value);
-				return root.FindNodeRecursively(value);
+				return Root.FindNodeRecursively(value);
 			}
 
 			throw new Exception("Invalid value, Please try again");
@@ -35,31 +37,39 @@ namespace BinarySearchTree
 
 		public TreeNode GetSmallestNode()
 		{
-			return root?.GetSmallestNode();
+			return Root?.GetSmallestNode();
 		}
 		public TreeNode GetSmallestNodeUsingRecursion()
 		{
-			return root?.GetSmallestNodeUsingRecursion();
+			return Root?.GetSmallestNodeUsingRecursion();
 		}
 		public TreeNode GetLargestNode()
 		{
-			return root?.GetLargestNode();
+			return Root?.GetLargestNode();
 		}
 		public TreeNode GetLargestNodeUsingRecursion()
 		{
-			return root?.GetLargestNodeUsingRecursion();
+			return Root?.GetLargestNodeUsingRecursion();
 		}
 		public TreeNode GetSmallestNodeWithoutUsingStackSpace()
 		{
-			return root?.GetSmallestNodeWithoutUsingStackSpace();
+			return Root?.GetSmallestNodeWithoutUsingStackSpace();
 		}
 		public TreeNode GetLargestNodeWithoutUsingStackSpace()
 		{
-			return root?.GetLargestNodeWithoutUsingStackSpace();
+			return Root?.GetLargestNodeWithoutUsingStackSpace();
 		}
 		public int? GetHeightOfTree()
 		{
-			return root?.GetHeightOfTree();
+			return Root?.GetHeightOfTree();
+		}
+		public int GetNumberOfNodesInTree()
+		{
+			return _numberOfNodesInTree;
+		}
+		public int? GetTotalNumberOfNodesInTree()
+		{
+			return Root?.GetTotalNumberOfNodesInTree();
 		}
 	}
 }

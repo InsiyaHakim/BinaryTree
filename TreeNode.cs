@@ -8,6 +8,8 @@ namespace BinarySearchTree
 		public TreeNode rightNode { get; set; }
 		public TreeNode leftNode { get; set; }
 
+		private static int Count;
+
 
 		public TreeNode(int value)
 		{
@@ -125,7 +127,6 @@ namespace BinarySearchTree
 
 			return rightNode;
 		}
-
 		public TreeNode GetLargestNodeUsingRecursion()
 		{
 			if (rightNode == null)
@@ -149,6 +150,22 @@ namespace BinarySearchTree
 
 			var result = Math.Max(left, right) + 1;
 			return result;
+		}
+
+		public int GetTotalNumberOfNodesInTree()
+		{
+			var currentNode = this;
+			++Count;
+
+			if (currentNode.leftNode == null || currentNode.rightNode == null)
+			{
+				return 0;
+			}
+
+			leftNode.GetTotalNumberOfNodesInTree();
+			rightNode.GetTotalNumberOfNodesInTree();
+
+			return Count;
 		}
 	}
 }

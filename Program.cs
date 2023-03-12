@@ -41,8 +41,12 @@ namespace BinarySearchTree
 		/*	var getLargestNodeWithoutUsingStackSpace = binaryTree.GetLargestNodeWithoutUsingStackSpace();
 			Console.WriteLine(getLargestNodeWithoutUsingStackSpace.data);*/
 			
-			var GetHeightOfTree = binaryTree.GetHeightOfTree();
-			Console.WriteLine(GetHeightOfTree);
+			/*var GetHeightOfTree = binaryTree.GetHeightOfTree();
+			Console.WriteLine(GetHeightOfTree);*/
+			
+			var getTotalNumberOfNodesInTree = binaryTree.GetTotalNumberOfNodesInTree();
+			Console.WriteLine(getTotalNumberOfNodesInTree);
+			Console.WriteLine(binaryTree.GetNumberOfNodesInTree());
 
 			
 
