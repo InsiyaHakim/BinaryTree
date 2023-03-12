@@ -38,8 +38,14 @@ namespace BinarySearchTree
 			/*var getSmallestNodeWithoutUsingStackSpace = binaryTree.GetSmallestNodeWithoutUsingStackSpace();
 			Console.WriteLine(getSmallestNodeWithoutUsingStackSpace.data);*/
 			
-			var getLargestNodeWithoutUsingStackSpace = binaryTree.GetLargestNodeWithoutUsingStackSpace();
-			Console.WriteLine(getLargestNodeWithoutUsingStackSpace.data);
+		/*	var getLargestNodeWithoutUsingStackSpace = binaryTree.GetLargestNodeWithoutUsingStackSpace();
+			Console.WriteLine(getLargestNodeWithoutUsingStackSpace.data);*/
+			
+			var GetHeightOfTree = binaryTree.GetHeightOfTree();
+			Console.WriteLine(GetHeightOfTree);
+
+			
+
 
 		}
 	}

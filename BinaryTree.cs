@@ -57,5 +57,9 @@ namespace BinarySearchTree
 		{
 			return root?.GetLargestNodeWithoutUsingStackSpace();
 		}
+		public int? GetHeightOfTree()
+		{
+			return root?.GetHeightOfTree();
+		}
 	}
 }

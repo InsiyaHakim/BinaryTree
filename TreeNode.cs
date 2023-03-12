@@ -135,6 +135,21 @@ namespace BinarySearchTree
 
 			return rightNode.GetLargestNodeUsingRecursion();
 		}
+
+		public int GetHeightOfTree()
+		{
+			var currentNode = this;
+			if (currentNode.leftNode == null || currentNode.rightNode == null)
+			{
+				return 1;
+			}
+
+			int left = leftNode.GetHeightOfTree();
+			int right = rightNode.GetHeightOfTree();
+
+			var result = Math.Max(left, right) + 1;
+			return result;
+		}
 	}
 }
 
