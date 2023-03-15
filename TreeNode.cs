@@ -167,6 +167,34 @@ namespace BinarySearchTree
 
 			return Count;
 		}
+
+		public int GetNumberOfLeafNodes()
+		{
+			if (this.leftNode == null && this.rightNode == null)
+			{
+				return 1;
+			}
+
+			var leftLeaf = (int)leftNode?.GetNumberOfLeafNodes();
+			var rightLeaf = (int)rightNode?.GetNumberOfLeafNodes();
+
+			return leftLeaf + rightLeaf;
+		}
+
+		public int GetNumberOfNodes()
+		{
+			if (leftNode == null || this.rightNode == null)
+			{
+				return 0;
+			}
+
+			var leftLeaf = (int)leftNode?.GetNumberOfNodes();
+			leftLeaf += 1;
+			var rightLeaf = (int)rightNode?.GetNumberOfNodes();
+			rightLeaf += 1;
+
+			return leftLeaf + rightLeaf;
+		}
 	}
 }
 

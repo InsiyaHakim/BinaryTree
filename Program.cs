@@ -45,8 +45,9 @@ namespace BinarySearchTree
 			Console.WriteLine(GetHeightOfTree);*/
 			
 			var getTotalNumberOfNodesInTree = binaryTree.GetTotalNumberOfNodesInTree();
-			Console.WriteLine(getTotalNumberOfNodesInTree);
-			Console.WriteLine(binaryTree.GetNumberOfNodesInTree());
+			//Console.WriteLine(getTotalNumberOfNodesInTree);
+			//Console.WriteLine(binaryTree.GetNumberOfNodesInTree());
+			Console.WriteLine(binaryTree.GetNumberOfNodes());
 
 			
 

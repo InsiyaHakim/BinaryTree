@@ -71,5 +71,13 @@ namespace BinarySearchTree
 		{
 			return Root?.GetTotalNumberOfNodesInTree();
 		}
+		public int? GetNumberOfNodes()
+		{
+			return Root != null ? Root.GetNumberOfNodes() + 1 : 0;
+		}
+		public int? GetNumberOfLeafNodes()
+		{
+			return Root?.GetNumberOfLeafNodes();
+		}
 	}
 }
