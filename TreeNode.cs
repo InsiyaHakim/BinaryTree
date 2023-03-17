@@ -175,8 +175,8 @@ namespace BinarySearchTree
 				return 1;
 			}
 
-			var leftLeaf = (int)leftNode?.GetNumberOfLeafNodes();
-			var rightLeaf = (int)rightNode?.GetNumberOfLeafNodes();
+			var leftLeaf = leftNode?.GetNumberOfLeafNodes() ?? 0;
+			var rightLeaf = rightNode?.GetNumberOfLeafNodes() ?? 0;
 
 			return leftLeaf + rightLeaf;
 		}
